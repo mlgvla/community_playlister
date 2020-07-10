@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use sqlite3 as the database for Active Record
@@ -28,6 +27,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 # Use RSpotify to make requests to the Spotify API
 gem 'rspotify'
+# Generate Bootstrap styles using Rails Form Helpers
+gem "bootstrap_form", "~> 4.0"
+
+#Omniauth gems
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'dotenv-rails'
+gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

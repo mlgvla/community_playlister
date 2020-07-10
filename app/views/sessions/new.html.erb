@@ -1,0 +1,20 @@
+<div class="container p-3 my-3 bg-light">
+    <h3 class="text-center">Login to Community Playlisters!</h3>
+    <br>
+
+    <div class="row justify-content-center">
+        <%= bootstrap_form_for :user do |f| %>
+
+            <%= f.email_field :email %>
+            <%= f.password_field :password %>
+
+            <div class="text-center">
+                <%= f.submit "Login", class: "btn btn-primary" %>
+            </div>
+        <% end %>
+        <br>
+        <%= link_to "Log In with Google", '/auth/google_oauth2' %>
+        <%= link_to "Log in with Github", "/auth/github" %>
+
+    </div>
+</div>

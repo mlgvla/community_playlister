@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+RSpotify::authenticate( "c3c9a566f03448ddb7d5236c5a0df0d2", "5ddedca9e191411290b8fdfeb80f17a7" )
+
 module CommunityPlaylister
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
