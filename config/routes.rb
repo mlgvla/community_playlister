@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
- 
-
-  
 
   root 'sessions#welcome'
 
@@ -14,7 +11,7 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#omniauth'
 
   resources :users, only: [:show]
-  resources :playlists, only: [:index, :new, :show, :edit]
+  resources :playlists, only: [:index, :new, :create, :show, :edit]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
