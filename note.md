@@ -1,6 +1,6 @@
 Next Sprint:
 
-Get Basic Bootstrap Template installed SignUp|Login|Logout|Go to Profile
+Add Go to Profile to Navbar
 Study Spotify for layout and flow - sketch a wireframe
 Implement UserTracks Model
 Display UserTracks on User Show Page

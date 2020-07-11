@@ -28,7 +28,6 @@ class SessionsController < ApplicationController
 
     def omniauth
         @user = User.create_by_github_omniauth(auth)
-        binding.pry
          #so there's a first name!  Maybe I should have a username?
         session[:user_id] = @user.id
         redirect_to user_path(@user)
