@@ -9,7 +9,12 @@ class PlaylistsController < ApplicationController
 	def create
 	end
 
-	def show
+    def show
+        @playlist = Playlist.find_by_id(params[:id])
+        if !@playlist
+            flash[:error] = "Playlist not found."
+            redirect_to playlists_path
+        end          
 	end
 
 	def edit
