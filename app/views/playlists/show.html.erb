@@ -1,3 +1,27 @@
 <h1><%= @playlist.name %></h1>
+<h3><%= @playlist.description %></h3>
 
+<table class="table table-striped text-left">
+        <thead>
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Album</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Sound Sample</th>
+            <!--<th scope="col">Description</th>-->
+            </tr>
+        </thead>
+        <tbody>
+            <% @tracks.each do |track| %>
+                <tr>
+                    <td><%= track.name %></td>
+                    <td>Artist</td>
+                    <td>Album</td>
+                    <td>Duration</td>
+                    <td>Sound Sample</td>    
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
 

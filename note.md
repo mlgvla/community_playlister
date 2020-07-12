@@ -1,6 +1,5 @@
 Next Sprint:
 
-Add Go to Profile to Navbar
 Study Spotify for layout and flow - sketch a wireframe
 Implement UserTracks Model
 Display UserTracks on User Show Page
@@ -31,6 +30,10 @@ PlaylistTrack features
 
 - User authorizations!!!!!!!! (logged in and current_user)
 
+- A user has_many playlist_tracks, as owner (delete priveleges only by contributor and owner of Playlist)
 
+- Hardcoded Track artist and album for now - convert to artist_id and album_id after those tables are constructed
+
+- create Artist and Album models
 
 

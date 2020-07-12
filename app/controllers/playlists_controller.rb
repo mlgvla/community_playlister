@@ -16,6 +16,7 @@ class PlaylistsController < ApplicationController
 
     def show
         @playlist = Playlist.find_by_id(params[:id])
+        @tracks = Track.all
         if !@playlist
             flash[:error] = "Playlist not found."
             redirect_to playlists_path
