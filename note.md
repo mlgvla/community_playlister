@@ -36,4 +36,10 @@ PlaylistTrack features
 
 - create Artist and Album models
 
+- whether it comes from the user's tracks or from a search, I can use the same form, which will include a dropdown box to add a track to a playlist.  Playlists are in dropdown box
 
+- a user should only see the public playlists and their own private ones, not the private ones of other users
+
+- Navbar - Playlists should dropdown to All (Community) Playlists and My Playlists
+
+- Make sure Playlists table is populated with user_ids! 
