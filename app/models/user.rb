@@ -2,8 +2,8 @@ class User < ApplicationRecord
     has_secure_password
 
     has_many :playlist_tracks
-    has_many :playlists
-    has_many :playlists, through: :playlist_tracks
+    has_many :playlists #as: owner?
+    # has_many :playlists, through: :playlist_tracks
     has_many :comments
 
     validates :email, presence: true

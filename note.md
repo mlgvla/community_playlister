@@ -7,7 +7,7 @@ Display UserTracks on User Show Page
 PlaylistTrack features
     - added by (use user_id)
     - artist/album
-    - sound snippet
+    - sound snippet or link to embeded track for Spotify users - just get track id.
     - tiny album art?
     - all of this stuff is available through the track feature
     - added_by attribute to PlaylistTrack.  Search all tracks added by particular user in present playlist or across all community playlists
@@ -43,3 +43,15 @@ PlaylistTrack features
 - Navbar - Playlists should dropdown to All (Community) Playlists and My Playlists
 
 - Make sure Playlists table is populated with user_ids! 
+
+- on Library page - highlight new Public Playlists
+
+- handle public private with a check box ("Make Public")
+
+- replace PLaylist_Track with Like instead of Note - increment likes everytime someone likes a track and then be able to sort tracks by number of likes?
+
+- present Track (by song) finds in order of popularity
+
+- track searches by Artist, Album, Song or general
+
+- make sure you see your private playlists even if they are public - add some display text to indiciate to you which ones of your playlists you've elected to make public or use a filter dropdown!
