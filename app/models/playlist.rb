@@ -7,5 +7,5 @@ class Playlist < ApplicationRecord
     #add validations for presence of name and user_id
 
     #scope - alphabetize, current length of playlist?, 
-    scope :public_playlists ,-> { where( public: true )}
+    scope :public_playlists, -> { where( public: true )}
 end
